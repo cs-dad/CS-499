@@ -1,0 +1,70 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="12dp">
+    <!-- This view is the row inventory item view, which is what will displayed when an item is clicked. -->
+    <!-- For the purpose of design display, I've populated a simple inventory item for a tv -->
+    <!-- Using relevant info an item might have like SKU, quantity, and its description -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/tvSku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sku123456"
+            android:textColor="#757575"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_item"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingTop="4dp" />
+
+        <EditText
+            android:id="@+id/tvQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_qty"
+            android:textSize="14sp"
+            android:paddingTop="2dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delete_btn"
+                android:textAllCaps="false"
+                android:textColor="@android:color/holo_red_dark"
+                android:background="@android:color/transparent" />
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save_btn"
+                android:textAllCaps="false"
+                android:textColor="@android:color/holo_blue_dark"
+                android:background="@android:color/transparent"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

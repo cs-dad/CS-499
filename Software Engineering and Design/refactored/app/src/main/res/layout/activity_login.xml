@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="24dp">
+
+    <!-- This view is the main view for logging into the system -->
+
+    <!-- Create the app title on the login page -->
+    <TextView
+        android:id="@+id/AppTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:text="@string/warehouse_inventory_app"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Text field to insert username-->
+    <EditText
+        android:id="@+id/Username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints="username"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        app:layout_constraintTop_toBottomOf="@id/AppTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="48dp"/>
+
+    <!-- Password field to insert pasword, obsuring what's entered-->
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints="password"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        app:layout_constraintTop_toBottomOf="@id/Username"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        app:layout_constraintTop_toBottomOf="@id/Password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
+
+    <!-- Button allowing user to create a new account -->
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/create_account"
+        app:layout_constraintTop_toBottomOf="@id/btnLogin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="warehouse_inventory_app">Warehouse Inventory App</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="create_account">Create Account</string>
+    <string name="inventory_items">Inventory Items</string>
+    <string name="add_item">Add Item</string>
+    <string name="sku_0001">SKU-0001</string>
+    <string name="SKU_0001_desc">12 mm Hex Bolts</string>
+    <string name="sku_0001_qty">Qty: 143</string>
+    <string name="sku_0001_delete">Delete</string>
+    <string name="sku_0001_save">Save</string>
+    <string name="sms_perm_text">To receive low-stock alerts by text message, we need your permssion to send SMS messages from your device.</string>
+    <string name="allow_sms_notifications">Allow SMS Notifications</string>
+    <string name="sms_perm_deny">Maybe Later</string>
+    <string name="app_name">Warehouse App\n</string>
+    <string name="new_item">New Item</string>
+    <string name="sku123456">SKU123456</string>
+    <string name="default_qty">0</string>
+    <string name="delete_btn">Delete</string>
+    <string name="save_btn">Save</string>
+</resources>

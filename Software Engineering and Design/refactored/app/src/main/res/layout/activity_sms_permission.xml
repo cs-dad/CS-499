@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <!-- This view is where the app will request the SMS_SEND permission to alert the user of low inventory stock -->
+    <!-- As previously mentioned, this is not a functional screen yet as the code logic will be implemented in proj 3 -->
+
+    <!-- Explanation Text-->
+    <TextView
+        android:id="@+id/smsExplain"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/sms_perm_text"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <!-- Allow Button -->
+    <Button
+        android:id="@+id/btnGrantSmsPerm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/allow_sms_notifications"
+        app:layout_constraintTop_toBottomOf="@id/smsExplain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        />
+
+    <!-- Deny Button -->
+    <Button
+        android:id="@+id/btnDenySmsPerm"
+        android:layout_width="366dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/sms_perm_deny"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnGrantSmsPerm" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
